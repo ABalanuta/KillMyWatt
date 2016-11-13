@@ -1,0 +1,9 @@
+[Unit]
+Description=KillMyWatt
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/opt/killmywatt/killmywatt.py
+
+[Install]
+WantedBy=multi-user.target
