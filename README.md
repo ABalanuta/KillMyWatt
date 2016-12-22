@@ -3,7 +3,7 @@ Using RPI and ADS1115 to mesure consumption and send data to EmonCMS
 
 ## Requires
  * Adafruit_Python_ADS1x15 installed
- * python-requests
 
 ## Install
+ * run ```sudo apt-get install git build-essential python-dev python-requests```
  * run ```make install```
