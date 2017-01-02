@@ -1,0 +1,6 @@
+[Unit]
+Description=Check connection to Server
+
+[Service]
+Type=simple
+ExecStart=/opt/killmywatt/check_link.sh

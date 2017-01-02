@@ -9,6 +9,10 @@ install:
 	sudo systemctl status killmywatt.service
 	sudo systemctl enable killmywatt.service
 	
-
-	#sudo cp killmywatt.service 
-
+	sudo cp check_link.sh /opt/killmywatt/check_link.sh
+	sudo chmod +x /opt/killmywatt/check_link.sh
+	sudo cp check_link.service /etc/systemd/system/
+	sudo cp check_link.timer /etc/systemd/system/	
+	
+	systemctl enable check_link.timer
+	systemctl start check_link.timer

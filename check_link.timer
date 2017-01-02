@@ -1,0 +1,12 @@
+[Unit]
+Description=Runs checl_link script every 2 minutes
+
+[Timer]
+# Time to wait after booting before we run first time
+OnBootSec=5min
+# Time between running each consecutive time
+OnUnitActiveSec=2min
+Unit=check_link.service
+
+[Install]
+WantedBy=multi-user.target
